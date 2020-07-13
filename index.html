@@ -7,39 +7,133 @@
     <title>LUCOM</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/09d7563721.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <nav>
         <div class="logo">
-            <img src="./images/LUCOM-01.svg" alt="logo" width="100" height="110">
+            <img src="./images/LUCOM-01.svg" alt="logo" width="70" height="80">
         </div>
         <ul class="nav-links">
             <li>
                 <a href="">Home</a>
             </li>
             <li>
-                <a href="">About</a>
+                <a href="">Services</a>
             </li>
             <li>
-                <a href="">Work</a>
+                <a href="">Projecten</a>
             </li>
             <li>
-                <a href="">Projects</a>
+                <a href="">Over ons</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
             </li>
         </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
         </div>
     </nav>
+    <hr>
 
-    <footer> 
-        <h2>Door Luc Swart - 2020</h2>
+    <section class="intro">
+        <div class="textoverimg">
+            <img src="./images/code.gif" alt="code" class="codeGif" width="110" height="110">
+            <div class="centered">Meer gemak en overzicht door gebruik van de nieuwste technologieën.</div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="services__text">
+            <h1>Wat wij bieden:</h1>
+        </div>
+        <div class="cen">
+            <div class="service">
+                <i class="fas fa-laptop"></i>
+                <h2>Websites</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+
+            <div class="service">
+                <i class="far fa-window-maximize"></i>
+                <h2>Webapplicaties</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+
+            <div class="service">
+                <i class="fas fa-mobile"></i>
+                <h2>Native apps</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services1">
+        <h1>Meer weten over wat wij voor u kunnen doen?</h1>
+        <button class="meerwetenBtn">Klik hier</button>
+    </section>
+
+    <section class="services">
+        <div class="services__text">
+            <h1>Projecten</h1>
+        </div>
+        <div class="cen">
+            <img src="./images/kistenregmockup.png" alt="kistenregmockup" class="projectenImg">
+            <h2>Kistenregistratie webapplicatie</h2>
+            <p>Kistenregistratie systeem voor een gemakkelijk overzicht van de voorraad en plek waar de kisten staan. De applicatie is volledig scalable en kan dus op elk moment uitgebreid worden.</p>
+            <button class="meerwetenBtn">Meer weten</button>
+        </div>
+    </section>
+
+    <hr>
+    <footer class="site-footer">
+        <div class="footer-over">
+            <h6>Over ons</h6>
+            <p class="text-justify">
+                <img src="./images/LUCOM-01.png" alt="logo" class="logo" width="110" height="110"><br>
+                LUCOM streeft ernaar om processen in een bedrijf gemakkelijker te maken door de nieuwste technologieën
+                toe te passen.
+                Op dit moment bieden wij webapplicaties en websites voorzien van kwaliteit code.
+            </p>
+        </div>
+
+        <div class="footer-categorie">
+            <h6>Sitemap</h6>
+            <ul class="footer-links">
+                <li><a href="http://scanfcode.com/category/c-language/">Home</a></li>
+                <li><a href="http://scanfcode.com/category/back-end-development/">Services</a></li>
+                <li><a href="http://scanfcode.com/category/java-programming-language/">Projecten</a></li>
+                <li><a href="http://scanfcode.com/category/front-end-development/">Over ons</a></li>
+                <li><a href="http://scanfcode.com/category/android/">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h6>Contact</h6>
+            <div>
+                Mail: Info@LUCOM.nl
+            </div>
+            <div>
+                Tel: (+031) 6 13740759
+            </div>
+            <div>
+                KVK: 78303206
+            </div>
+            <div>
+                BTW: NL003315797B47
+            </div>
+            <div>
+                <button class="contactBtn"><span>Contactformulier </span></button>
+            </div>
+        </div>
         <hr>
-        
+        </div>
+        <div class="footer-copyright">
+            <p class="copyright-text">Copyright &copy; by Luc Swart - All Rights Reserved
+            </p>
+        </div>
     </footer>
     <script src="app.js"></script>
 </body>

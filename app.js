@@ -1,5 +1,5 @@
 const navSlide = () => {
-    const burger = document.querySelector('.burger');
+    const burger = document.querySelector('.menu-btn');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
 
@@ -17,6 +17,20 @@ const navSlide = () => {
         });
     })
 }
+
+//Burger animatie
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+    if (!menuOpen) {
+        menuBtn.classList.add('open');
+        menuOpen = true;
+    } else {
+        menuBtn.classList.remove('open');
+        menuOpen = false;
+    }
+
+})
 
 //Alle functies bij een
 const app = () => {
