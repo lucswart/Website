@@ -1,7 +1,7 @@
-$kleur:#154360;
-$textkleur:#FBFCFC;
-$lichter: #1F618D;
-$textkleur1: #ECF0F1;
+$kleur:#1C2833;
+$textkleur:#FAFAFA;
+$textkleur1: #424242;
+$logokleur: #2474a4;
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -16,22 +16,32 @@ body {
 
 nav {
     display: flex;
+    position: fixed;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: $kleur;
+    background-color: $textkleur;
     z-index: 1;
 }
 
 .logo {
-    color: $textkleur;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 22px;
+    z-index: 1;
+    width: 80px;
+    height: 70px;
 }
 
+/* Logo wit maken 
+.logo {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+*/
+
 .nav-links {
-    z-index: 1;
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -43,7 +53,7 @@ nav {
 
 .nav-links a {
     text-transform: uppercase;
-    color: $textkleur;
+    color: $kleur;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -68,7 +78,7 @@ nav {
 .menu-btn__burger {
     width: 30px;
     height: 3px;
-    background: $textkleur;
+    background: $kleur;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
     transition: all .5s ease-in-out;
@@ -80,7 +90,7 @@ nav {
     position: absolute;
     width: 30px;
     height: 3px;
-    background: $textkleur;
+    background: $kleur;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
     transition: all .5s ease-in-out;
@@ -121,10 +131,10 @@ nav {
     }
 
     .nav-links {
-        position: absolute;
+        position: fixed;
         right: 0px;
         height: 100vh;
-        top: 8vh;
+        top: 5vh;
         background-color: $kleur;
         display: flex;
         flex-direction: column;
@@ -132,6 +142,10 @@ nav {
         width: 100%;
         transform: translatex(100%);
         transition: transform 0.5s ease-in;
+    }
+
+    .nav-links a {
+        color: $textkleur;
     }
 
     .nav-links li {
@@ -161,6 +175,12 @@ nav {
 
 
 /* footer */
+.footerLogo {
+    filter: brightness(0) invert(1);
+    width: 150px;
+    height: 150px;
+}
+
 .site-footer {
     text-align: center;
     background-color: $kleur;
@@ -238,9 +258,25 @@ nav {
     margin: 0
 }
 
-.footer-over{
+.footer-over {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+@media (min-width:769px) {
+
+    .footer-over,
+    .footer-categorie,
+    .footer-contact,
+    .footer-copyright {
+        display: inline-block;
+        width: 30vw;
+    }
+
+    .footer-categorie {
+        border-right: 4px solid $textkleur;
+        border-left: 4px solid $textkleur;
+    }
 }
 
 .footer-over,
@@ -260,29 +296,24 @@ nav {
     }
 }
 
-@media (max-width:767px) {
+@media (max-width:768px) {
     .site-footer {
         padding-bottom: 0
     }
 
     .site-footer .copyright-text,
     .site-footer .social-icons {
-        text-align: center
+        text-align: center;
+        display: block;
     }
-}
-
-/* Logo wit maken */
-.logo {
-    -webkit-filter: brightness(0) invert(1);
-    filter: brightness(0) invert(1);
 }
 
 /*contact button */
 .contactBtn {
     border-radius: 4px;
-    background-color: $lichter;
+    background-color: $textkleur;
     border: none;
-    color: $textkleur;
+    color: $kleur;
     text-align: center;
     font-size: 16px;
     padding: 20px;
@@ -321,36 +352,162 @@ nav {
 
 /* Intro */
 .intro {
-    height: auto;
+    padding-top: 8vh;
     width: 100%;
-    background-color: $kleur;
+    height: 100vh;
+    background-color: $textkleur;
+
 }
 
-.codeGif {
+.animation-area{
     width: 100%;
-    opacity: 30%;
-    height: 30vw;
+    height: 100%;
 }
 
-.textoverimg {
-    position: relative;
-    text-align: center;
-    color: $textkleur;
+.box-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-.centered {
+.box-area li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;;
+    height: 25px;
+    background: $logokleur;
+    animation: animate 20s linear infinite;
+    opacity: 50%;
+    bottom: -150px;
+}
+
+.box-area li:nth-child(1){
+    left:86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.box-area li:nth-child(2){
+    left:12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+}
+
+.box-area li:nth-child(3){
+    left: 42%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+}
+
+.box-area li:nth-child(4){
+    left:70%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+
+.box-area li:nth-child(5){
+    left:65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+    animation-duration: 10s;
+}
+
+.box-area li:nth-child(6){
+    left: 15%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3.5s;
+}
+
+@keyframes animate{
+
+    0%{
+        transform: translateY(0) rotate(0deg)
+    }
+    100%{
+        transform: translateY(-800px) rotate(360deg);
+    }
+}
+
+.IntroTekst {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 4vw;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: $kleur;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.IntroTekst p {
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.IntroTekst p span.typed-text {
+    font-weight: normal;
+    color: $logokleur;
+}
+
+.IntroTekst p span.cursor {
+    display: inline-block;
+    background-color: $kleur;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+.IntroTekst p span.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0% {
+        background-color: $kleur;
+    }
+
+    49% {
+        background-color: $kleur;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    99% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: $kleur;
+    }
 }
 
 @media screen and (max-width: 1200px) {
     .centered {
         font-size: 4vw;
+    }
+
+    .IntroTekst {
+        font-size: 6vw;
     }
 }
 
@@ -359,12 +516,13 @@ nav {
     padding-top: 60px;
     height: auto;
     width: 100%;
-    background-color: $lichter;
+    background-color: $textkleur;
     text-align: center;
     padding-bottom: 60px;
 }
 
 .services__text h1 {
+    color: $kleur;
     display: inline-block;
     text-transform: uppercase;
     font-weight: bold;
@@ -378,6 +536,15 @@ nav {
     overflow: hidden;
     padding: 20px;
 
+}
+
+.cen h2 {
+    color: $kleur;
+}
+
+.cen p {
+    margin-top: 10px;
+    color: $textkleur1;
 }
 
 .service {
@@ -395,9 +562,21 @@ nav {
 }
 
 .service i {
-    color: $textkleur;
+    color: $kleur;
     font-size: 34px;
     margin-bottom: 30px;
+}
+
+.service:hover i {
+    color: $textkleur;
+}
+
+.service:hover h2 {
+    color: $textkleur;
+}
+
+.service:hover p {
+    color: $textkleur;
 }
 
 .service h2 {
@@ -405,6 +584,7 @@ nav {
     text-transform: uppercase;
     font-weight: 700;
     margin: 0;
+    color: $kleur;
 }
 
 .service p {
@@ -466,5 +646,5 @@ nav {
 .meerwetenBtn:hover {
     background-color: $textkleur;
     color: black;
-    border: 2px solid $textkleur;
+    border: 2px solid $kleur;
 }
