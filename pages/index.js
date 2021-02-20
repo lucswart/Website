@@ -41,7 +41,7 @@ export default function Home() {
         <meta property="og:title" content="Home | Byte24" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://byte24.nl" />
-        <meta property="og:image" content="/logo.png" />
+        <meta property="og:image" content="/logo3.jpg" />
         <meta
           property="og:description"
           content="Byte24 is de bestemming voor al uw benodigdheden op het gebied van app- en webdevelopment."
@@ -270,9 +270,8 @@ export default function Home() {
             <div className="col-lg-6 position-relative mt-4 mt-lg-0">
               <h1 className="block__title mb-3">Maatwerk</h1>
               <p className="block__paragraph block__paragraph--big mb-0">
-                Ieder project is uniek en we geven er de volle 100% voor. Je
-                maakt deel uit van het bouwproces en wordt op de hoogte gehouden
-                van elke stap die genomen wordt.
+                Je maakt deel uit van het bouwproces en wordt op de hoogte
+                gehouden van elke stap die genomen wordt.
               </p>
             </div>
           </div>
@@ -403,7 +402,7 @@ export default function Home() {
             <a href="/contact" className="btn btn-primary">
               Vraag gelijk een offerte aan
             </a>
-            <hr style={{ marginTop: 40 }} />
+            <hr style={{ marginTop: 60 }} />
             <h2 className="block__title" style={{ marginTop: 40 }}>
               Of laat ons contact met je opnemen.
             </h2>
