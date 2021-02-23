@@ -3,8 +3,35 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Lottie from "react-lottie";
 import Link from "next/link";
+import TextTransition from "react-text-transition";
+import React, { useState, useEffect } from "react";
+
+const TEXTS = ["Website", "App", "Design", "Webshop"];
 
 export default function Home() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(
+      () => setIndex((index) => index + 1),
+      3000 // every 3 seconds
+    );
+    return () => clearTimeout(intervalId);
+  }, []);
+
+  useEffect(() => {
+    window.$crisp = [];
+    window.CRISP_WEBSITE_ID = "ceb61c49-5547-48fd-8e08-983e04bd4ca3";
+
+    (function () {
+      var d = document;
+      var s = d.createElement("script");
+      s.src = "https://client.crisp.chat/l.js";
+      s.async = 1;
+      d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+  }, []);
+
   function submitForm(t) {
     t.preventDefault();
     var n = t.target.querySelector("button");
@@ -73,12 +100,17 @@ export default function Home() {
           <div className="hero__body">
             <div className="row px-0 mx-0">
               <div className="col-lg-6 px-0 mx-0">
-                <h1 className="hero__title mb-4">
-                  Jouw online project start hier.
-                </h1>
+                <h2 className="hero__title mb-4">
+                  Wij zijn jouw eindbestemming voor een{" "}
+                  <TextTransition
+                    className="underlineText"
+                    inline={true}
+                    text={TEXTS[index % TEXTS.length]}
+                  />
+                </h2>
                 <p className="hero__paragraph mb-5">
-                  Van web- tot appdevelopment. BYTE24 brengt jouw online project
-                  tot leven.
+                  Jouw online project start hier. Van web- tot appdevelopment.
+                  BYTE24 brengt jouw online project tot leven.
                 </p>
                 <div className="hero__btns-container">
                   <a
@@ -104,7 +136,9 @@ export default function Home() {
 
       <div class="block-12 space-between-blocks">
         <div class="container-xl">
-          <h1 className="block__title mb-3">Onze services</h1>
+          <h2 className="block__title mb-3">
+            Onze core <span className="gradientText">services</span>
+          </h2>
           <p className="block__paragraph block__paragraph--big mb-3">
             Heb jij een idee? Wij voeren het uit! We leveren hoge kwaliteit en
             maatwerk tegen betaalbare prijzen!
@@ -311,8 +345,8 @@ export default function Home() {
                 </span>
                 <h3 class="card-3__title mb-2">Scalable</h3>
                 <p class="card-3__paragraph">
-                  We handle institutions and courses with thousands of users.
-                  Eduflow is built to scale.
+                  Applicaties gebouwd met schaalbaarheid in gedachte. Geen
+                  zorgen over servers die overvol raken.
                 </p>
               </div>
               <div class="card-3 mb-5">
@@ -321,8 +355,8 @@ export default function Home() {
                 </span>
                 <h3 class="card-3__title mb-2">Toegankelijkheid</h3>
                 <p class="card-3__paragraph">
-                  Eduflow is built with WCAG standards in mind and can easily be
-                  navigated by keyboard and screen readers.
+                  Websites gemaakt voor elk platform. Of je het nou op een
+                  mobiel of desktop bekijkt, je website is altijd toegankelijk.
                 </p>
               </div>
             </div>
@@ -330,12 +364,12 @@ export default function Home() {
               <div class="col-lg-7 px-0 pb-5 mx-auto">
                 <div class="card-3 mb-lg-0">
                   <span class="fr-icon mx-auto mb-4 dropdown__icon">
-                    <i class="far fa-comment-alt"></i>
+                    <i class="fas fa-shield-alt"></i>
                   </span>
                   <h3 class="card-3__title mb-2">Veilig</h3>
                   <p class="card-3__paragraph">
-                    We take privacy as seriously as we take learning. Eduflow is
-                    FERPA, CSPC and GDPR compliant.
+                    Beveiliging staat op nummer 1. Al onze websites/applicaties
+                    zijn gemaakt met beveiliging voorop.
                   </p>
                 </div>
               </div>
@@ -356,13 +390,12 @@ export default function Home() {
               <div class="col-lg-7 px-0 pt-5 mx-auto">
                 <div class="card-3 mb-lg-0">
                   <span class="fr-icon mx-auto mb-4 dropdown__icon">
-                    <i class="far fa-comment-alt"></i>
+                    <i class="fas fa-question"></i>
                   </span>
                   <h3 class="card-3__title mb-2">Support</h3>
                   <p class="card-3__paragraph">
-                    We have support staff covering working hours in both the US
-                    and Europe. Our extensive help center supports off-hour
-                    queries.
+                    We staan altijd klaar voor je vragen. Of dit nou voor,
+                    tijdens of na aflevering is. We staan altijd voor je klaar.
                   </p>
                 </div>
               </div>
@@ -370,21 +403,22 @@ export default function Home() {
             <div class="col-lg-3">
               <div class="card-3 mb-5">
                 <span class="fr-icon mx-auto mb-4 dropdown__icon">
-                  <i class="far fa-comment-alt"></i>
+                  <i class="fas fa-euro-sign"></i>
                 </span>
                 <h3 class="card-3__title mb-2">Betaalbaar</h3>
                 <p class="card-3__paragraph">
-                  Built by educators, we believe in equitable education for all.
+                  Een op maat gemaakte website of app hoeft niet duur te zijn.
                 </p>
               </div>
               <div class="card-3 mb-5">
                 <span class="fr-icon mx-auto mb-4 dropdown__icon">
-                  <i class="far fa-comment-alt"></i>
+                  <i class="fas fa-bolt"></i>
                 </span>
                 <h3 class="card-3__title mb-2">Snelheid</h3>
                 <p class="card-3__paragraph">
-                  Access Eduflow from your browser. No matter what device you’re
-                  using, Eduflow will work right in your browser.
+                  Niemand houdt van wachten. Naast dat je app of website op de
+                  meest efficiëntste manier is gebouwd, hoef je ook geen maanden
+                  te wachten tot het klaar is.
                 </p>
               </div>
             </div>
@@ -395,7 +429,9 @@ export default function Home() {
         <div className="container">
           <div className="col-lg-8 col-xl-7 mx-auto text-center mb-4">
             <h1 className="block__title">
-              Breng de digitale uitstraling van uw bedrijf omhoog.
+              Breng de{" "}
+              <span className="gradientText">digitale uitstraling</span> van uw
+              bedrijf omhoog.
             </h1>
           </div>
           <div className="text-center mt-1">
@@ -404,7 +440,8 @@ export default function Home() {
             </a>
             <hr style={{ marginTop: 60 }} />
             <h2 className="block__title" style={{ marginTop: 40 }}>
-              Of laat ons contact met je opnemen.
+              Of laat ons <span className="gradientText">contact</span> met je
+              opnemen.
             </h2>
             <form onSubmit={(e) => submitForm(e)} class="cta-input mt-4 mb-2">
               <input

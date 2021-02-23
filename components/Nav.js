@@ -166,7 +166,7 @@ const Nav = (props) => {
                           <a href="/diensten/websites" class="dropdown__link">
                             <div>
                               <span class="dropdown__icon">
-                                <i class="fas fa-eye"></i>
+                                <i class="fas fa-window-maximize"></i>
                               </span>
                             </div>
                             <span class="mx-2"></span>
@@ -183,7 +183,7 @@ const Nav = (props) => {
                           <a href="/diensten/apps" class="dropdown__link">
                             <div>
                               <span class="dropdown__icon">
-                                <i class="far fa-comment-alt"></i>
+                                <i class="fas fa-mobile"></i>
                               </span>
                             </div>
                             <span class="mx-2"></span>
@@ -193,14 +193,15 @@ const Nav = (props) => {
                               </span>
                               <p class="dropdown__item-description">
                                 Ontdek de verschillen tussen native apps en web
-                                apps en zie welke het beste bij jou past.
+                                apps en zie welke het beste bij jouw use-case
+                                past.
                               </p>
                             </div>
                           </a>
                           <a href="/diensten/design" class="dropdown__link">
                             <div>
                               <span class="dropdown__icon">
-                                <i class="far fa-comment-alt"></i>
+                                <i class="fas fa-pencil-ruler"></i>
                               </span>
                             </div>
                             <span class="mx-2"></span>
@@ -268,6 +269,82 @@ const Nav = (props) => {
                 </ul>
               </li>
             </ul>
+            <div className="navTriangles">
+              <div
+                style={{
+                  bottom: "15%",
+                  transform: "rotate(90deg)",
+                  left: 10,
+                  position: "absolute",
+                  fill: "#fff",
+                  opacity: "30%",
+                }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="174.462"
+                  height="124.886"
+                  viewBox="0 0 174.462 124.886"
+                >
+                  <g>
+                    <path d="M0 42.821l81.5 48.07L80.117 0zm2.763 0L78.736 2.252 80.117 88.4zm133.767-12.86l.815 45.777 37.116-23.483zm1.381 2.431l33.856 19.836-33.082 20.982zm-47.7 89.731l29.464 2.763-11.047-27.447zm2.569-1.146l15.457-20.72 9.31 23.068z"></path>
+                    <path
+                      d="M101.6 22.58L44.63 41.407 68.444 61.63l23.828 20.223z"
+                      transform="translate(17.019 8.61)"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div
+                style={{
+                  bottom: "15%",
+                  right: 10,
+                  position: "absolute",
+                  fill: "#fff",
+                  opacity: "30%",
+                }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="174.462"
+                  height="124.886"
+                  viewBox="0 0 174.462 124.886"
+                >
+                  <g>
+                    <path d="M0 42.821l81.5 48.07L80.117 0zm2.763 0L78.736 2.252 80.117 88.4zm133.767-12.86l.815 45.777 37.116-23.483zm1.381 2.431l33.856 19.836-33.082 20.982zm-47.7 89.731l29.464 2.763-11.047-27.447zm2.569-1.146l15.457-20.72 9.31 23.068z"></path>
+                    <path
+                      d="M101.6 22.58L44.63 41.407 68.444 61.63l23.828 20.223z"
+                      transform="translate(17.019 8.61)"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div
+                style={{
+                  bottom: "5%",
+                  right: "30%",
+                  position: "absolute",
+                  fill: "#fff",
+                  opacity: "30%",
+                  transform: "rotate(180deg)",
+                }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="174.462"
+                  height="124.886"
+                  viewBox="0 0 174.462 124.886"
+                >
+                  <g>
+                    <path d="M0 42.821l81.5 48.07L80.117 0zm2.763 0L78.736 2.252 80.117 88.4zm133.767-12.86l.815 45.777 37.116-23.483zm1.381 2.431l33.856 19.836-33.082 20.982zm-47.7 89.731l29.464 2.763-11.047-27.447zm2.569-1.146l15.457-20.72 9.31 23.068z"></path>
+                    <path
+                      d="M101.6 22.58L44.63 41.407 68.444 61.63l23.828 20.223z"
+                      transform="translate(17.019 8.61)"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
             <button close-nav-menu="" class="ft-menu__close-btn animated">
               <svg
                 class="bi bi-x"
