@@ -1,16 +1,112 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
+  const [email, setEmail] = useState("");
+  const [naam, setNaam] = useState("");
+  const [bericht, setBericht] = useState("");
+
+  function clearFields() {
+    setEmail("");
+    setNaam("");
+    setBericht("");
+  }
+
+  function sendMail() {
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: naam,
+        email: email,
+        text: bericht,
+        type: "Contact",
+      }),
+    }).then((res) => {
+      console.log("Fetch: ", res);
+      res.status === 200
+        ? toast.success(
+            "Verzonden! We nemen zo snel mogelijk contact met je op.",
+            {
+              position: "bottom-center",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              style: { backgroundColor: "#00a69c" },
+              progressStyle: { backgroundColor: "#26a9e0" },
+              draggable: true,
+              progress: undefined,
+            }
+          ) && clearFields()
+        : toast.error(
+            "Error! Als dit probleem blijft, neem dan contact op met onze email of telefoonnummer.",
+            {
+              position: "bottom-center",
+              style: { backgroundColor: "#A93226" },
+              progressStyle: { backgroundColor: "#092f57" },
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+            }
+          );
+    });
+  }
+
+  function submitForm(t) {
+    t.preventDefault();
+    if (email != "" && bericht != "" && naam != "") {
+      sendMail();
+    } else {
+      toast.error("Vul alle velden in om een mail te sturen.", {
+        position: "bottom-center",
+        style: { backgroundColor: "#A93226" },
+        progressStyle: { backgroundColor: "#092f57" },
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
+  }
+
+  useEffect(() => {
+    window.$crisp = [];
+    window.CRISP_WEBSITE_ID = "ceb61c49-5547-48fd-8e08-983e04bd4ca3";
+
+    (function () {
+      var d = document;
+      var s = d.createElement("script");
+      s.src = "https://client.crisp.chat/l.js";
+      s.async = 1;
+      d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+  }, []);
+
+  function openChat(e) {
+    e.preventDefault();
+    $crisp.push(["do", "chat:open"]);
+  }
+
   return (
     <>
       <Head>
         <title>Contact | Byte24</title>
         <meta
           name="description"
-          content="Byte24 is de bestemming voor al uw benodigdheden op het gebied van app- en webdevelopment."
+          content="Byte24 is de bestemming voor al uw benodigdheden op het gebied van app- en webdevelopment. Neem gelijk contact op om je online project tot realisatie te brengen!"
         />
         <meta property="og:title" content="Contact | Byte24" />
         <meta property="og:type" content="website" />
@@ -18,7 +114,7 @@ export default function Contact() {
         <meta property="og:image" content="/logo3.jpg" />
         <meta
           property="og:description"
-          content="Neem gelijk contact op om je online project tot realisatie te brengen!"
+          content="Byte24 is de bestemming voor al uw benodigdheden op het gebied van app- en webdevelopment. Neem gelijk contact op om je online project tot realisatie te brengen!"
         />
         <meta name="theme-color" content="#ffffff" />
         <link rel="icon" type="image/png" href="/favicon.ico" />
@@ -83,7 +179,7 @@ export default function Contact() {
             </div>
             <div class="col-lg-6 h-100 block-28__form-side">
               <form
-                onsubmit="submitContactForm(event)"
+                onSubmit={(e) => submitForm(e)}
                 class="contact-form text-center"
               >
                 <div class="contact-form__header mb-5">
@@ -93,7 +189,12 @@ export default function Contact() {
                     snel mogelijk reageren.
                   </p>
                 </div>
-                <button class="btn btn-primary w-100">Open live chat</button>
+                <button
+                  class="btn btn-primary w-100"
+                  onClick={(e) => openChat(e)}
+                >
+                  Open live chat
+                </button>
                 <div class="hr">
                   <span class="hr__or">OF</span>
                 </div>
@@ -101,15 +202,21 @@ export default function Contact() {
                   type="text"
                   class="contact-form__input"
                   placeholder="Naam"
+                  onChange={(e) => setNaam(e.target.value)}
+                  value={naam}
                 />
                 <input
                   type="email"
                   class="contact-form__input"
                   placeholder="Email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
                 />
                 <textarea
                   class="contact-form__input"
                   placeholder="Bericht"
+                  value={bericht}
+                  onChange={(e) => setBericht(e.target.value)}
                 ></textarea>
                 <button id="submit-btn" class="btn btn-primary w-100">
                   Verstuur
@@ -120,6 +227,7 @@ export default function Contact() {
         </div>
       </div>
       <Footer />
+      <ToastContainer />
     </>
   );
 }

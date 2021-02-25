@@ -5,11 +5,15 @@ import Lottie from "react-lottie";
 import Link from "next/link";
 import TextTransition from "react-text-transition";
 import React, { useState, useEffect } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const TEXTS = ["Website", "App", "Design", "Webshop"];
 
 export default function Home() {
   const [index, setIndex] = useState(0);
+  const [telefoonNr, setTelefoonNr] = useState("");
+  const [emailAdres, setEmailAdres] = useState("");
 
   useEffect(() => {
     const intervalId = setInterval(
@@ -32,17 +36,83 @@ export default function Home() {
     })();
   }, []);
 
+  function clearFields() {
+    setEmailAdres("");
+    setTelefoonNr("");
+  }
+
+  function sendMail(n) {
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: "Contact opnemen",
+        email: emailAdres,
+        text: telefoonNr,
+        type: "Home",
+      }),
+    }).then((res) => {
+      console.log("Fetch: ", res);
+      res.status === 200
+        ? toast.success(
+            "Verzonden! We nemen zo snel mogelijk contact met je op.",
+            {
+              position: "bottom-center",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              style: { backgroundColor: "#00a69c" },
+              progressStyle: { backgroundColor: "#26a9e0" },
+              draggable: true,
+              progress: undefined,
+            }
+          ) &&
+          n.classList.remove("btn--loading") &&
+          clearFields()
+        : toast.error("Error!", {
+            position: "bottom-center",
+            style: { backgroundColor: "#A93226" },
+            progressStyle: { backgroundColor: "#092f57" },
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+    });
+  }
+
   function submitForm(t) {
     t.preventDefault();
-    var n = t.target.querySelector("button");
-    if (n.classList.contains("btn--loading")) return !1;
-    n.classList.add("btn--loading");
-    try {
-      setTimeout(function () {
-        n.classList.remove("btn--loading");
-      }, 2e3);
-    } catch (t) {
-      console.log(t), n.classList.remove("btn--loading");
+    if (emailAdres != "") {
+      var n = t.target.querySelector("button");
+      if (n.classList.contains("btn--loading")) return !1;
+      n.classList.add("btn--loading");
+      try {
+        sendMail(n);
+      } catch (t) {
+        console.log(t), n.classList.remove("btn--loading");
+      }
+    } else {
+      toast.error(
+        "Vul een email in, zodat wij contact met je kunnen opnemen.",
+        {
+          position: "bottom-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          style: { backgroundColor: "#A93226" },
+          progressStyle: { backgroundColor: "#092f57" },
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        }
+      );
     }
   }
 
@@ -445,14 +515,18 @@ export default function Home() {
             </h2>
             <form onSubmit={(e) => submitForm(e)} class="cta-input mt-4 mb-2">
               <input
+                onChange={(e) => setEmailAdres(e.target.value)}
+                value={emailAdres}
                 type="email"
                 class="cta-input__input flex-grow-1"
-                placeholder="Email"
+                placeholder="Email*"
               />
               <input
+                onChange={(e) => setTelefoonNr(e.target.value)}
+                value={telefoonNr}
                 type="text"
                 class="cta-input__input flex-grow-1"
-                placeholder="Telefoon (optioneel)"
+                placeholder="Telefoon"
               />
               <button class="cta-input__btn">Verstuur</button>
             </form>
@@ -460,6 +534,7 @@ export default function Home() {
         </div>
       </div>
       <Footer />
+      <ToastContainer />
     </>
   );
 }
