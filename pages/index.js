@@ -343,7 +343,7 @@ export default function Home() {
                 <span class="fr-icon mx-auto mb-4 dropdown__icon">
                   <i class="far fa-comment-alt"></i>
                 </span>
-                <h3 class="card-3__title mb-2">Scalable</h3>
+                <h3 class="card-3__title mb-2">Schaalbaar</h3>
                 <p class="card-3__paragraph">
                   Applicaties gebouwd met schaalbaarheid in gedachte. Geen
                   zorgen over servers die overvol raken.
@@ -429,9 +429,9 @@ export default function Home() {
         <div className="container">
           <div className="col-lg-8 col-xl-7 mx-auto text-center mb-4">
             <h1 className="block__title">
-              Breng de{" "}
-              <span className="gradientText">digitale uitstraling</span> van uw
-              bedrijf omhoog.
+              Breng de <span className="gradientText">digitale</span>{" "}
+              <span className="gradientText">uitstraling</span> van uw bedrijf
+              omhoog.
             </h1>
           </div>
           <div className="text-center mt-1">
@@ -448,6 +448,11 @@ export default function Home() {
                 type="email"
                 class="cta-input__input flex-grow-1"
                 placeholder="Email"
+              />
+              <input
+                type="text"
+                class="cta-input__input flex-grow-1"
+                placeholder="Telefoon (optioneel)"
               />
               <button class="cta-input__btn">Verstuur</button>
             </form>

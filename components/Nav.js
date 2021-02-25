@@ -140,6 +140,55 @@ const Nav = (props) => {
                       Over ons
                     </a>
                   </li>
+
+                  <li class="hero-nav__item hero-nav__item--with-dropdown">
+                    <span class="hero-nav__link" tabindex="1" role="button">
+                      <span class="flex-grow-1 mr-2">Producten</span>
+                      <svg
+                        class="hero-nav__item-chevron bi bi-chevron-down"
+                        width=".8em"
+                        height=".8em"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <div class="hero-nav__dropdown dropdown dropdown--of-1-columns">
+                      <div class="row flex-wrap">
+                        <div class="col-lg-12">
+                          <span class="dropdown__title mt-0">
+                            ONZE PRODUCTEN
+                          </span>
+                          <a
+                            href="/producten/voorraadbeheer"
+                            target="_blank"
+                            class="dropdown__link"
+                          >
+                            <div>
+                              <span class="dropdown__icon">
+                                <i class="fas fa-boxes"></i>
+                              </span>
+                            </div>
+                            <span class="mx-2"></span>
+                            <div class="dropdown__item">
+                              <span class="dropdown__item-title">
+                                Voorraad beheer systeem
+                              </span>
+                              <p class="dropdown__item-description">
+                                Voorraad beheer voor bollenboeren en
+                                akkerbouwers.
+                              </p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
                   <li class="hero-nav__item hero-nav__item--with-dropdown">
                     <span class="hero-nav__link" tabindex="1" role="button">
                       <span class="flex-grow-1 mr-2">Diensten</span>
@@ -211,54 +260,6 @@ const Nav = (props) => {
                                 Design is het eerste wat mensen zien bij een
                                 bedrijf. Kleuren, vormen en tekst spreken mensen
                                 onbewust of bewust aan.
-                              </p>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="hero-nav__item hero-nav__item--with-dropdown">
-                    <span class="hero-nav__link" tabindex="1" role="button">
-                      <span class="flex-grow-1 mr-2">Producten</span>
-                      <svg
-                        class="hero-nav__item-chevron bi bi-chevron-down"
-                        width=".8em"
-                        height=".8em"
-                        viewBox="0 0 16 16"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                        ></path>
-                      </svg>
-                    </span>
-                    <div class="hero-nav__dropdown dropdown dropdown--of-1-columns">
-                      <div class="row flex-wrap">
-                        <div class="col-lg-12">
-                          <span class="dropdown__title mt-0">
-                            ONZE PRODUCTEN
-                          </span>
-                          <a
-                            href="/producten/voorraadbeheer"
-                            target="_blank"
-                            class="dropdown__link"
-                          >
-                            <div>
-                              <span class="dropdown__icon">
-                                <i class="fas fa-boxes"></i>
-                              </span>
-                            </div>
-                            <span class="mx-2"></span>
-                            <div class="dropdown__item">
-                              <span class="dropdown__item-title">
-                                Voorraad beheer systeem
-                              </span>
-                              <p class="dropdown__item-description">
-                                Voorraad beheer voor bollenboeren en
-                                akkerbouwers.
                               </p>
                             </div>
                           </a>
