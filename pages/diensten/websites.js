@@ -63,7 +63,7 @@ export default function Websites() {
             />
             <img
               class="mackbook-mockup__screenshot"
-              src={require("../../assets/byte24Screen.png")}
+              src={require("../../assets/byte24Screenshot.png")}
             />
           </motion.div>
         </div>
