@@ -5,9 +5,7 @@ export default (req, res) => {
   const { name, email, text, type } = req.body;
 
   const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: true,
+    service: "gmail",
     auth: {
       user: process.env.EMAIL,
       pass: process.env.PASSWORD,
@@ -16,7 +14,7 @@ export default (req, res) => {
 
   const mailOption = {
     from: `${process.env.EMAIL}`,
-    to: `info@byte24.nl`,
+    to: `${process.env.EMAIL}`,
     subject: `${
       type === "Home"
         ? `Contact opnemen met ${email}`

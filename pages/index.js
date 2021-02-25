@@ -41,8 +41,8 @@ export default function Home() {
     setTelefoonNr("");
   }
 
-  function sendMail(n) {
-    fetch("/api/contact", {
+  async function sendMail(n) {
+    await fetch("/api/contact", {
       method: "POST",
       headers: {
         Accept: "application/json, text/plain, */*",
@@ -204,7 +204,7 @@ export default function Home() {
         </div>
       </header>
 
-      <div class="block-12 space-between-blocks">
+      <div class="block-13 space-between-blocks">
         <div class="container-xl">
           <h2 className="block__title mb-3">
             Onze core <span className="gradientText">services</span>
@@ -495,7 +495,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="block-32 space-between-blocks">
+      <div className="block-13 space-between-blocks">
         <div className="container">
           <div className="col-lg-8 col-xl-7 mx-auto text-center mb-4">
             <h1 className="block__title">
