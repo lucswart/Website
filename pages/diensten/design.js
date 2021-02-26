@@ -11,15 +11,15 @@ export default function Websites() {
         <title>Websites | Byte24</title>
         <meta
           name="description"
-          content="Professionele website laten maken? Byte24 is de bestemming voor al uw benodigdheden op het gebied van app- en webdevelopment."
+          content="Logo of andere designs nodig? Byte24 is de bestemming voor al uw benodigdheden op het gebied van app- en webdevelopment."
         />
-        <meta property="og:title" content="Websites | Byte24" />
+        <meta property="og:title" content="Design | Byte24" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://byte24.nl/diensten/websites" />
-        <meta property="og:image" content="/byteWebsiteThumb.jpg" />
+        <meta property="og:url" content="http://byte24.nl/diensten/design" />
+        <meta property="og:image" content="/byteDesignThumb.jpg" />
         <meta
           property="og:description"
-          content="Professionele website laten maken? Byte24 is de bestemming voor al uw benodigdheden op het gebied van app- en webdevelopment."
+          content="Logo of andere designs nodig? Byte24 is de bestemming voor al uw benodigdheden op het gebied van app- en webdevelopment."
         />
         <meta name="theme-color" content="#ffffff" />
         <link rel="icon" type="image/png" href="/favicon.ico" />
@@ -45,26 +45,28 @@ export default function Websites() {
       <header className="hero container-fluid">
         <Nav />
         <div class="hero__body text-center col-lg-8 px-0 mx-auto">
-          <motion.h1 layoutId="title" className="hero__title mb-3">
+          <motion.h1 layoutId="title2" className="hero__title mb-3">
             <span class="highlight" style={{ color: "#26a9e0" }}>
-              Websites & Webshops
+              Design
             </span>
           </motion.h1>
           <motion.p
             class="block__paragraph block__paragraph--big mb-0"
-            layoutId="sub"
+            layoutId="sub2"
           >
-            Of je nou een blog of een webshop wil, alles is mogelijk. Wij kiezen
-            de juiste CMS, betalingsystemen en design voor jouw project.
+            Design is het eerste wat mensen zien bij een bedrijf. Kleuren,
+            vormen en tekst spreken mensen onbewust of bewust aan.
           </motion.p>
         </div>
         <motion.div
           class="hero__img-container col-11 col-lg-8 mx-auto p-0 mt-5"
-          layoutId="image"
+          layoutId="image2"
         >
           <img
+            alt="designImg"
+            style={{ borderRadius: 20 }}
             class="iphone-mockup__img"
-            src={require("../../assets/macScreenshot.png")}
+            src={require("../../assets/designs.png")}
           />
         </motion.div>
       </header>

@@ -63,6 +63,7 @@ export default function Apps() {
           style={{ width: "30%" }}
         >
           <img
+            alt="appMockup"
             style={{ width: "100%" }}
             class="iphone-mockup__img"
             src={require("../../assets/iphoneMockup.png")}

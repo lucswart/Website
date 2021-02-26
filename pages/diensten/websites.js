@@ -63,6 +63,7 @@ export default function Websites() {
           layoutId="image"
         >
           <img
+            alt="websiteMockup"
             class="iphone-mockup__img"
             src={require("../../assets/macScreenshot.png")}
           />

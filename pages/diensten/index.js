@@ -69,6 +69,7 @@ export default function Diensten() {
                 layoutId="image"
               >
                 <img
+                  alt="websiteImg"
                   style={{ width: "100%" }}
                   class="iphone-mockup__img"
                   src={require("../../assets/macScreenshot.png")}
@@ -273,6 +274,7 @@ export default function Diensten() {
             <div class="col-lg-6 my-5 my-lg-0 text-center position-relative">
               <motion.div class="iphone-mockup" layoutId="image1">
                 <img
+                  alt="appImg"
                   class="iphone-mockup__img"
                   src={require("../../assets/iphoneMockup.png")}
                 />
@@ -293,13 +295,18 @@ export default function Diensten() {
         <div class="container position-relative">
           <div class="row px-2 align-items-center flex-column-reverse flex-lg-row">
             <div class="col-lg-6 my-5 my-lg-0 text-center position-relative">
-              <div class="iphone-mockup">
+              <motion.div
+                class="iphone-mockup"
+                style={{ width: 300 }}
+                layoutId="image2"
+              >
                 <img
-                  style={{ width: 300, borderRadius: 20 }}
+                  alt="designImg"
+                  style={{ borderRadius: 20 }}
                   class="iphone-mockup__img"
                   src={require("../../assets/designs.png")}
                 />
-              </div>
+              </motion.div>
               <svg
                 class="block-8-iph-iph-blob-svg"
                 viewBox="0 0 330 340"
@@ -312,15 +319,26 @@ export default function Diensten() {
               </svg>
             </div>
             <div class="col-lg-6 position-relative">
-              <h2 class="block__title block__title--big mb-3">
+              <motion.h2
+                layoutId="title2"
+                class="block__title block__title--big mb-3"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+              >
                 <span class="highlight" style={{ color: "#26a9e0" }}>
                   Design
                 </span>
-              </h2>
-              <p class="block__paragraph block__paragraph--big mb-0">
+              </motion.h2>
+              <motion.p
+                class="block__paragraph block__paragraph--big mb-0"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.2 }}
+                layoutId="sub2"
+              >
                 Design is het eerste wat mensen zien bij een bedrijf. Kleuren,
                 vormen en tekst spreken mensen onbewust of bewust aan.
-              </p>
+              </motion.p>
               <ul class="block-8-iph__list list-unstyled mb-0">
                 <li class="block-8-iph__li d-flex align-items-center">
                   <span class="block-8-iph__li-icon">
@@ -377,9 +395,17 @@ export default function Diensten() {
                 </li>
               </ul>
               <div class="mt-4 pb-4">
-                <a href="#" class="btn btn-primary">
-                  Meer weten
-                </a>
+                <Link href="/diensten/design">
+                  <motion.a
+                    initial={{ y: -50, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.4 }}
+                    style={{ color: "#fff" }}
+                    class="btn btn-primary"
+                  >
+                    Ontdek wat we voor je kunnen doen.
+                  </motion.a>
+                </Link>
               </div>
             </div>
           </div>

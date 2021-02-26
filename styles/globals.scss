@@ -1748,7 +1748,7 @@ textarea.contact-form__input {
   position: relative;
   z-index: 1;
   transition: transform 0.5s;
-  background: #27282f;
+  background: var(--secondary-invert);
   overflow: hidden;
   min-height: 300px;
   color: #fff;

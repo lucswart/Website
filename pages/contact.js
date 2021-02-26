@@ -155,10 +155,11 @@ export default function Contact() {
                   <h6 class="contact-info__title-2 mb-3">Bedrijf</h6>
                   <p class="d-flex flex-column">
                     <span class="contact-info__item mb-2">
-                      <span style={{ fontWeight: "bold" }}>KVK</span> KVK NR
+                      <span style={{ fontWeight: "bold" }}>KVK</span> 81950608
                     </span>
                     <span class="contact-info__item mb-2">
-                      <span style={{ fontWeight: "bold" }}>BTW</span> BTW NR
+                      <span style={{ fontWeight: "bold" }}>BTW</span>{" "}
+                      NL862282135B01
                     </span>
                   </p>
                 </div>
