@@ -4,22 +4,22 @@ import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import Head from "next/head";
 
-export default function Websites() {
+export default function Apps() {
   return (
     <>
       <Head>
-        <title>Websites | Byte24</title>
+        <title>Apps | Byte24</title>
         <meta
           name="description"
-          content="Professionele website laten maken? Byte24 is de bestemming voor al uw benodigdheden op het gebied van app- en webdevelopment."
+          content="Wil jij een app laten maken? Byte24 is de bestemming voor al uw benodigdheden op het gebied van app- en webdevelopment."
         />
         <meta property="og:title" content="Websites | Byte24" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://byte24.nl/diensten/websites" />
-        <meta property="og:image" content="/byteWebsiteThumb.jpg" />
+        <meta property="og:url" content="http://byte24.nl/diensten/apps" />
+        <meta property="og:image" content="/byteAppsThumb.jpg" />
         <meta
           property="og:description"
-          content="Professionele website laten maken? Byte24 is de bestemming voor al uw benodigdheden op het gebied van app- en webdevelopment."
+          content="Wil jij een app laten maken? Byte24 is de bestemming voor al uw benodigdheden op het gebied van app- en webdevelopment."
         />
         <meta name="theme-color" content="#ffffff" />
         <link rel="icon" type="image/png" href="/favicon.ico" />
@@ -45,26 +45,27 @@ export default function Websites() {
       <header className="hero container-fluid">
         <Nav />
         <div class="hero__body text-center col-lg-8 px-0 mx-auto">
-          <motion.h1 layoutId="title" className="hero__title mb-3">
-            <span class="highlight" style={{ color: "#26a9e0" }}>
-              Websites & Webshops
-            </span>
+          <motion.h1 layoutId="title1" className="hero__title mb-3">
+            <span class="highlight">Apps</span>
           </motion.h1>
           <motion.p
             class="block__paragraph block__paragraph--big mb-0"
-            layoutId="sub"
+            layoutId="sub1"
           >
-            Of je nou een blog of een webshop wil, alles is mogelijk. Wij kiezen
-            de juiste CMS, betalingsystemen en design voor jouw project.
+            Apps zijn voor 89% verantwoordelijk voor de totale mobiele
+            mediatijd. Het is daarom van belang om je klanten de beste mobiele
+            ervaring te bieden.
           </motion.p>
         </div>
         <motion.div
           class="hero__img-container col-11 col-lg-8 mx-auto p-0 mt-5"
-          layoutId="image"
+          layoutId="image1"
+          style={{ width: "30%" }}
         >
           <img
+            style={{ width: "100%" }}
             class="iphone-mockup__img"
-            src={require("../../assets/macScreenshot.png")}
+            src={require("../../assets/iphoneMockup.png")}
           />
         </motion.div>
       </header>

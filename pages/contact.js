@@ -35,7 +35,7 @@ export default function Contact() {
         ? toast.success(
             "Verzonden! We nemen zo snel mogelijk contact met je op.",
             {
-              position: "bottom-center",
+              position: "top-center",
               autoClose: 5000,
               hideProgressBar: false,
               closeOnClick: true,
@@ -49,7 +49,7 @@ export default function Contact() {
         : toast.error(
             "Error! Als dit probleem blijft, neem dan contact op met onze email of telefoonnummer.",
             {
-              position: "bottom-center",
+              position: "top-center",
               style: { backgroundColor: "#A93226" },
               progressStyle: { backgroundColor: "#092f57" },
               autoClose: 5000,
@@ -69,7 +69,7 @@ export default function Contact() {
       sendMail();
     } else {
       toast.error("Vul alle velden in om een mail te sturen.", {
-        position: "bottom-center",
+        position: "top-center",
         style: { backgroundColor: "#A93226" },
         progressStyle: { backgroundColor: "#092f57" },
         autoClose: 5000,
@@ -111,7 +111,7 @@ export default function Contact() {
         <meta property="og:title" content="Contact | Byte24" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://byte24.nl/contact" />
-        <meta property="og:image" content="/logo3.jpg" />
+        <meta property="og:image" content="/byteContactThumb.jpg" />
         <meta
           property="og:description"
           content="Byte24 is de bestemming voor al uw benodigdheden op het gebied van app- en webdevelopment. Neem gelijk contact op om je online project tot realisatie te brengen!"

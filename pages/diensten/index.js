@@ -17,7 +17,7 @@ export default function Diensten() {
         <meta property="og:title" content="Diensten | Byte24" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://byte24.nl/diensten" />
-        <meta property="og:image" content="/logo3.jpg" />
+        <meta property="og:image" content="/byteDienstenThumb.jpg" />
         <meta
           property="og:description"
           content="Byte24 is de bestemming voor al uw benodigdheden op het gebied van app- en webdevelopment."
@@ -63,26 +63,25 @@ export default function Diensten() {
         <div class="container position-relative">
           <div class="row px-2 align-items-center flex-column-reverse flex-lg-row">
             <div class="col-lg-6 my-5 my-lg-0 text-center position-relative">
-              <motion.div class="mackbook-mockup" layoutId="image">
+              <motion.div
+                class="iphone-mockup"
+                style={{ width: 500 }}
+                layoutId="image"
+              >
                 <img
-                  class="mackbook-mockup__img"
-                  src={require("../../assets/MacBook-Pro.png")}
-                />
-                <img
-                  class="mackbook-mockup__screenshot"
-                  src={require("../../assets/byte24Screenshot.png")}
+                  style={{ width: "100%" }}
+                  class="iphone-mockup__img"
+                  src={require("../../assets/macScreenshot.png")}
                 />
               </motion.div>
               <svg
-                class="block-8-mac-mk-blob-svg"
-                x="0px"
-                y="0px"
-                viewBox="0 0 488 470"
+                class="block-8-iph-iph-blob-svg"
+                viewBox="0 0 330 340"
                 style={{ color: "#26a9e0" }}
               >
                 <path
+                  d="M36.2776 135.15C56.2778 60.5085 140.989 18.3532 225.485 40.9939C309.981 63.6345 313.366 129.395 293.366 204.037C273.366 278.678 237.553 333.936 153.058 311.295C68.5616 288.655 16.2774 209.792 36.2776 135.15Z"
                   fill="currentColor"
-                  d="M426.9,319.4L274,437.8c-53,41-126.9,41.7-180.6,1.6l-33.1-24.7  C1,370.3-17.2,289.3,17.4,223.8L99,69.5c29.4-55.7,94.3-82.6,154.5-64.1l123,37.8C499,80.7,528.3,240.9,426.9,319.4z"
                 ></path>
               </svg>
             </div>
@@ -102,6 +101,7 @@ export default function Diensten() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
+                layoutId="sub"
               >
                 Of je nou een blog of een webshop wil, alles is mogelijk. Wij
                 kiezen de juiste CMS, betalingsystemen en design voor jouw
@@ -182,14 +182,25 @@ export default function Diensten() {
         <div class="container position-relative">
           <div class="row px-2 align-items-center flex-column-reverse flex-lg-row">
             <div class="col-lg-6 position-relative">
-              <h2 class="block__title block__title--big mb-3">
+              <motion.h2
+                layoutId="title1"
+                class="block__title block__title--big mb-3"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+              >
                 <span class="highlight">Apps</span>
-              </h2>
-              <p class="block__paragraph block__paragraph--big mb-0">
+              </motion.h2>
+              <motion.p
+                class="block__paragraph block__paragraph--big mb-0"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.2 }}
+                layoutId="sub1"
+              >
                 Apps zijn voor 89% verantwoordelijk voor de totale mobiele
                 mediatijd. Het is daarom van belang om je klanten de beste
                 mobiele ervaring te bieden.
-              </p>
+              </motion.p>
               <ul class="block-8-iph__list list-unstyled mb-0">
                 <li class="block-8-iph__li d-flex align-items-center">
                   <span class="block-8-iph__li-icon">
@@ -246,22 +257,27 @@ export default function Diensten() {
                 </li>
               </ul>
               <div class="mt-4 pb-4">
-                <a href="#" class="btn btn-primary">
-                  Ontdek wat we nog meer bieden.
-                </a>
+                <Link href="/diensten/apps">
+                  <motion.a
+                    initial={{ y: -50, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.4 }}
+                    style={{ color: "#fff" }}
+                    class="btn btn-primary"
+                  >
+                    Ontdek wat we nog meer bieden.
+                  </motion.a>
+                </Link>
               </div>
             </div>
             <div class="col-lg-6 my-5 my-lg-0 text-center position-relative">
-              <div class="iphone-mockup">
+              <motion.div class="iphone-mockup" layoutId="image1">
                 <img
                   class="iphone-mockup__img"
-                  src={require("../../assets/iPhoneXs-Mockup.png")}
+                  src={require("../../assets/iphoneMockup.png")}
                 />
-                <img
-                  class="iphone-mockup__screenshot"
-                  src={require("../../assets/loginExample.png")}
-                />
-              </div>
+              </motion.div>
+
               <svg class="block-8-iph-iph-blob-svg" viewBox="0 0 330 340">
                 <path
                   d="M36.2776 135.15C56.2778 60.5085 140.989 18.3532 225.485 40.9939C309.981 63.6345 313.366 129.395 293.366 204.037C273.366 278.678 237.553 333.936 153.058 311.295C68.5616 288.655 16.2774 209.792 36.2776 135.15Z"

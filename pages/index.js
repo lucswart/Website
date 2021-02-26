@@ -60,7 +60,7 @@ export default function Home() {
         ? toast.success(
             "Verzonden! We nemen zo snel mogelijk contact met je op.",
             {
-              position: "bottom-center",
+              position: "top-center",
               autoClose: 5000,
               hideProgressBar: false,
               closeOnClick: true,
@@ -74,7 +74,7 @@ export default function Home() {
           n.classList.remove("btn--loading") &&
           clearFields()
         : toast.error("Error!", {
-            position: "bottom-center",
+            position: "top-center",
             style: { backgroundColor: "#A93226" },
             progressStyle: { backgroundColor: "#092f57" },
             autoClose: 5000,
@@ -102,7 +102,7 @@ export default function Home() {
       toast.error(
         "Vul een email in, zodat wij contact met je kunnen opnemen.",
         {
-          position: "bottom-center",
+          position: "top-center",
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
@@ -452,7 +452,7 @@ export default function Home() {
                 </p>
                 <a
                   className="hero__btn btn btn-primary mb-2 mb-lg-0 mx-1 mx-lg-2"
-                  href="/diensten"
+                  href="/overons"
                 >
                   Over ons
                 </a>
@@ -499,9 +499,8 @@ export default function Home() {
         <div className="container">
           <div className="col-lg-8 col-xl-7 mx-auto text-center mb-4">
             <h1 className="block__title">
-              Breng de <span className="gradientText">digitale</span>{" "}
-              <span className="gradientText">uitstraling</span> van uw bedrijf
-              omhoog.
+              Heb jij een <span className="gradientText">project</span>? Wij
+              brengen je <span className="gradientText">idee</span> tot leven.
             </h1>
           </div>
           <div className="text-center mt-1">
