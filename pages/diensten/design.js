@@ -72,219 +72,115 @@ export default function Websites() {
         </motion.div>
       </header>
 
-      <div class="block-13 space-between-blocks" style={{ marginTop: 100 }}>
-        <div class="block-12__shape-for-background"></div>
+      <div class="block-10 position-relative space-between-blocks">
+        <div class="block-10__row d-block d-lg-flex row mx-0">
+          <div class="block-10__image-column container col-lg-6"></div>
+        </div>
         <div class="container">
-          <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
-            <h1 class="block__title mb-3">
-              Een bouwproces die je verwacht van{" "}
-              <span class="gradientText">professionals</span>
-            </h1>
-            <p class="block__paragraph pb-4">
-              Afgeleverd tot op de kleinste puntjes. We gaan door tot je
-              tevreden bent.
-            </p>
-          </div>
-          <div class="row px-2 justify-content-center">
-            <div class="col-lg-4 mb-2-1rem">
-              <div class="block-12-card-1">
-                <div class="block-12-card-1__content">
-                  <div class="block-12-card-1__icon">
-                    <svg
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 16 16"
-                      class="bi bi-cpu"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"
-                      ></path>
-                    </svg>
+          <div class="row px-2 flex-row-reverse">
+            <div class="col-lg-8">
+              <div class="block-10__card">
+                <h2 class="block__title mb-3">
+                  De huisstijl van je bedrijf is een van de belangrijkste dingen
+                </h2>
+                <p class="block__paragraph mb-5">
+                  Je logo, nieuwsbrief, briefpapier, visitekaartjes en meer zijn
+                  belangrijk dat die er goed uit zien. Zorg voor een
+                  professionele uitstraling voor je bedrijf.
+                </p>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <ul class="list-unstyled p-0 pb-3 pb-lg-0 mb-4 mb-lg-0">
+                      <li class="block-10__li d-flex align-items-center">
+                        <span class="fr-icon m-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-palette2"
+                            viewBox="0 0 16 16"
+                          >
+                            <path d="M0 .5A.5.5 0 0 1 .5 0h5a.5.5 0 0 1 .5.5v5.277l4.147-4.131a.5.5 0 0 1 .707 0l3.535 3.536a.5.5 0 0 1 0 .708L10.261 10H15.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5H3a2.99 2.99 0 0 1-2.121-.879A2.99 2.99 0 0 1 0 13.044m6-.21l7.328-7.3-2.829-2.828L6 7.188v5.647zM4.5 13a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zM15 15v-4H9.258l-4.015 4H15zM0 .5v12.495z" />
+                            <path d="M0 12.995V13a3.07 3.07 0 0 0 0-.005z" />
+                          </svg>
+                        </span>
+                        <div class="px-2"></div>
+                        <div>
+                          <p class="block-10__li-text m-0">Geweldige designs</p>
+                        </div>
+                      </li>
+                      <li class="block-10__li d-flex align-items-center">
+                        <span class="fr-icon m-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-palette"
+                            viewBox="0 0 16 16"
+                          >
+                            <path d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                            <path d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z" />
+                          </svg>
+                        </span>
+                        <div class="px-2"></div>
+                        <div>
+                          <p class="block-10__li-text m-0">Kleurenpalette</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
-                  <h3 class="block-12-card-1__title">Gebouwd voor snelheid</h3>
-                  <p class="block-12-card-1__paragraph">
-                    Niemand houdt van wachten. Je website wordt op de meest
-                    efficiëntste manier gebouwd.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-2-1rem">
-              <div class="block-12-card-1">
-                <div class="block-12-card-1__content">
-                  <div class="block-12-card-1__icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-tag"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z" />
-                      <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586l7 7L13.586 9l-7-7H2v4.586z" />
-                    </svg>
+                  <div class="col-lg-6">
+                    <ul class="list-unstyled p-0">
+                      <li class="block-10__li d-flex align-items-center">
+                        <span class="fr-icon m-0">
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-braces"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z"></path>
+                          </svg>
+                        </span>
+                        <div class="px-2"></div>
+                        <div>
+                          <p class="block-10__li-text m-0">
+                            Volledige gebruikersrechten
+                          </p>
+                        </div>
+                      </li>
+                      <li class="block-10__li d-flex align-items-center">
+                        <span class="fr-icon m-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-layout-text-window-reverse"
+                            viewBox="0 0 16 16"
+                          >
+                            <path d="M13 6.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm0 3a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z" />
+                            <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM2 1a1 1 0 0 0-1 1v1h14V2a1 1 0 0 0-1-1H2zM1 4v10a1 1 0 0 0 1 1h2V4H1zm4 0v11h9a1 1 0 0 0 1-1V4H5z" />
+                          </svg>
+                        </span>
+                        <div class="px-2"></div>
+                        <div>
+                          <p class="block-10__li-text m-0">
+                            Alles wat je nodig hebt
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
-                  <h3 class="block-12-card-1__title">Scherpe prijs</h3>
-                  <p class="block-12-card-1__paragraph">
-                    Je betaald voor wat je krijgt. Wij zullen daarom altijd
-                    goedkoper blijven dan de concurrent.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-2-1rem">
-              <div class="block-12-card-1">
-                <div class="block-12-card-1__content">
-                  <div class="block-12-card-1__icon">
-                    <svg
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 16 16"
-                      class="bi bi-briefcase"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6h-1v6a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-6H0v6z"
-                      ></path>
-                      <path
-                        fill-rule="evenodd"
-                        d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v2.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 6.884V4.5zM1.5 4a.5.5 0 0 0-.5.5v1.616l6.871 1.832a.5.5 0 0 0 .258 0L15 6.116V4.5a.5.5 0 0 0-.5-.5h-13zM5 2.5A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <h3 class="block-12-card-1__title">
-                    Professionele uitstraling voor uw bedrijf
-                  </h3>
-                  <p class="block-12-card-1__paragraph">
-                    Betere conversie van bezoeker naar klant door eye-catching
-                    designs en interactie.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-2-1rem">
-              <div class="block-12-card-1">
-                <div class="block-12-card-1__content">
-                  <div class="block-12-card-1__icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-phone"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
-                      <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                    </svg>
-                  </div>
-                  <h3 class="block-12-card-1__title">
-                    Staat goed op elk apparaat
-                  </h3>
-                  <p class="block-12-card-1__paragraph">
-                    Of je de site nou op mobiel of desktop bezoekt, de website
-                    zal er altijd piek fijn uitzien.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-2-1rem">
-              <div class="block-12-card-1">
-                <div class="block-12-card-1__content">
-                  <div class="block-12-card-1__icon">
-                    <svg
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 16 16"
-                      class="bi bi-lightning"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <h3 class="block-12-card-1__title">Snelle levertijd</h3>
-                  <p class="block-12-card-1__paragraph">
-                    Geen maanden wachten totdat je website af is. We streven
-                    ernaar om het binnen 2 weken af te hebben.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-2-1rem">
-              <div class="block-12-card-1">
-                <div class="block-12-card-1__content">
-                  <div class="block-12-card-1__icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-search"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                    </svg>
-                  </div>
-                  <h3 class="block-12-card-1__title">Goede SEO</h3>
-                  <p class="block-12-card-1__paragraph">
-                    Wordt gevonden in elke zoekmachine met de keywords die
-                    belangrijk zijn voor jou.
-                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="container" style={{ marginTop: 100 }}>
-        <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
-          <h2 class="block__title mb-3">
-            <span class="gradientText">Use cases</span>
-          </h2>
-          <p class="block__paragraph pb-4">
-            Waarom is een goede website voor mijn bedrijf zo belangrijk? En hoe
-            kan ik daarvan profiteren?
-          </p>
-        </div>
-        <h3>Verbeterde zichtbaarheid</h3>
-        <p>
-          Door een goed gestructureerde site te laten bouwen, ben je in staat om
-          je online zichtbaarheid drastisch te verbeteren. Een
-          gebruiksvriendelijke en waardevolle site, die aansluit op de behoeften
-          van de doelgroep zal ervoor zorgen dat meer en meer mensen uit je
-          doelgroep jouw website en daarmee jouw onderneming vinden. Hiermee
-          speelt een site een essentiële rol bij de groei.
-        </p>
-        <h3>Opbouwen van een relatie met de doelgroep</h3>
-        <p>
-          Een direct gevolg van een goede site laten maken, is dat je hierdoor
-          het contact met de doelgroep kan uitbreiden. Door bijvoorbeeld
-          bezoekers te laten inschrijven voor een nieuwsbrief of door te
-          reageren op berichten van bezoekers. Ben je in staat om beter in te
-          spelen op feedback. Hoe beter de website in elkaar zit. Hoe
-          makkelijker en waardevoller het contact is.
-        </p>
-        <h3>Positioneren als autoriteit op jouw gebied</h3>
-        <p>
-          Een website waar veel tijd en moeite in is en wordt gestoken, zal zich
-          blijven ontwikkelen naarmate de tijd vordert. Door de toenemende
-          bezoekersaantallen, die bijvoorbeeld door social media ook zichtbaar
-          worden. Positioneer je je als onderneming zijnde steeds meer als
-          autoriteit op jouw gebied. Door dit bewijs hebben bezoekers
-          automatisch meer vertrouwen in dat waar je als bedrijf voor staat. Wat
-          opnieuw de nodige positieve effecten met zich meebrengt.
-        </p>
       </div>
 
       <div class="block-29 my-lg-5 px-4 px-sm-5 container space-between-blocks overflow-hidden">

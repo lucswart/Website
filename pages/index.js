@@ -83,7 +83,7 @@ export default function Home() {
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-          });
+          }) && n.classList.remove("btn--loading");
     });
   }
 

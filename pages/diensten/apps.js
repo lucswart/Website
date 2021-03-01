@@ -184,12 +184,9 @@ export default function Apps() {
                       <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
                     </svg>
                   </div>
-                  <h3 class="block-12-card-1__title">
-                    Staat goed op elk apparaat
-                  </h3>
+                  <h3 class="block-12-card-1__title">Cross platform</h3>
                   <p class="block-12-card-1__paragraph">
-                    Of je de site nou op mobiel of desktop bezoekt, de website
-                    zal er altijd piek fijn uitzien.
+                    Je app is op beide platformen (iOS & Android) te besturen.
                   </p>
                 </div>
               </div>
@@ -215,7 +212,7 @@ export default function Apps() {
                   <h3 class="block-12-card-1__title">Snelle levertijd</h3>
                   <p class="block-12-card-1__paragraph">
                     Geen maanden wachten totdat je website af is. We streven
-                    ernaar om het binnen 2 weken af te hebben.
+                    ernaar om het binnen 1 maand af te ronden.
                   </p>
                 </div>
               </div>
@@ -229,18 +226,48 @@ export default function Apps() {
                       width="16"
                       height="16"
                       fill="currentColor"
-                      class="bi bi-search"
+                      class="bi bi-rulers"
                       viewBox="0 0 16 16"
                     >
-                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                      <path d="M1 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h5v-1H2v-1h4v-1H4v-1h2v-1H2v-1h4V9H4V8h2V7H2V6h4V2h1v4h1V4h1v2h1V2h1v4h1V4h1v2h1V2h1v4h1V1a1 1 0 0 0-1-1H1z" />
                     </svg>
                   </div>
-                  <h3 class="block-12-card-1__title">Goede SEO</h3>
+                  <h3 class="block-12-card-1__title">Alles op maat</h3>
                   <p class="block-12-card-1__paragraph">
-                    Wordt gevonden in elke zoekmachine met de keywords die
-                    belangrijk zijn voor jou.
+                    Unieke backend en frontend afgestemd op jouw eisen.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block-22 space-between-blocks">
+        <div class="container">
+          <div class="row px-2">
+            <div class="col-lg-10 mx-auto">
+              <div class="testimonial-card-3 text-center">
+                <svg
+                  class="testimonial-card-3__quote-svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.9 10.537c1.147.22 2.095.727 2.844 1.52.75.75 1.124 1.83 1.124 3.24 0 1.543-.507 2.777-1.52 3.703-1.015.881-2.27 1.322-3.77 1.322-1.807 0-3.217-.639-4.23-1.917-1.015-1.278-1.522-2.931-1.522-4.959 0-3.041.948-5.487 2.843-7.339C17.565 4.257 20.342 3.22 24 3v2.182c-1.983.264-3.548.837-4.694 1.719-1.102.837-1.741 2.05-1.918 3.636h2.513zm-12.76 0c1.102.22 2.028.727 2.777 1.52.75.75 1.124 1.83 1.124 3.24 0 1.543-.507 2.777-1.52 3.703-1.014.881-2.27 1.322-3.769 1.322-1.807 0-3.218-.639-4.231-1.917C.507 17.127 0 15.474 0 13.446c0-3.041.948-5.487 2.843-7.339C4.783 4.257 7.581 3.22 11.24 3v2.182c-1.984.264-3.549.837-4.695 1.719-1.146.837-1.807 2.05-1.983 3.636H7.14z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <p class="testimonial-card-3__paragraph mb-3 mt-4">
+                  Byte24 helpt je door het hele proces en haalt het beste uit je
+                  ideeën. Samen met jou maken we de best mogelijke app op elk
+                  vlak.
+                </p>
+                <p class="block-22-person mt-4 mb-0">
+                  <span>Luc Swart, Byte24</span>
+                </p>
               </div>
             </div>
           </div>
@@ -250,40 +277,25 @@ export default function Apps() {
       <div class="container" style={{ marginTop: 100 }}>
         <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
           <h2 class="block__title mb-3">
-            <span class="gradientText">Use cases</span>
+            <span class="gradientText">Waarom een app?</span>
           </h2>
           <p class="block__paragraph pb-4">
-            Waarom is een goede website voor mijn bedrijf zo belangrijk? En hoe
-            kan ik daarvan profiteren?
+            Als ondernemer, bedrijf of organisatie wil je de best mogelijke
+            service bieden aan jouw doelgroep. Zowel offline als online. Een app
+            biedt hier nieuwe kansen; notificaties, toegankelijkheid en veel
+            meer.
           </p>
         </div>
         <h3>Verbeterde zichtbaarheid</h3>
         <p>
-          Door een goed gestructureerde site te laten bouwen, ben je in staat om
-          je online zichtbaarheid drastisch te verbeteren. Een
-          gebruiksvriendelijke en waardevolle site, die aansluit op de behoeften
-          van de doelgroep zal ervoor zorgen dat meer en meer mensen uit je
-          doelgroep jouw website en daarmee jouw onderneming vinden. Hiermee
-          speelt een site een essentiële rol bij de groei.
+          De naam van jouw bedrijf in de app store. Bied mensen de mogelijkheid
+          om op meerdere manieren met jouw product of dienst in aanraking te
+          komen.
         </p>
-        <h3>Opbouwen van een relatie met de doelgroep</h3>
+        <h3>Nieuw klantencontact</h3>
         <p>
-          Een direct gevolg van een goede site laten maken, is dat je hierdoor
-          het contact met de doelgroep kan uitbreiden. Door bijvoorbeeld
-          bezoekers te laten inschrijven voor een nieuwsbrief of door te
-          reageren op berichten van bezoekers. Ben je in staat om beter in te
-          spelen op feedback. Hoe beter de website in elkaar zit. Hoe
-          makkelijker en waardevoller het contact is.
-        </p>
-        <h3>Positioneren als autoriteit op jouw gebied</h3>
-        <p>
-          Een website waar veel tijd en moeite in is en wordt gestoken, zal zich
-          blijven ontwikkelen naarmate de tijd vordert. Door de toenemende
-          bezoekersaantallen, die bijvoorbeeld door social media ook zichtbaar
-          worden. Positioneer je je als onderneming zijnde steeds meer als
-          autoriteit op jouw gebied. Door dit bewijs hebben bezoekers
-          automatisch meer vertrouwen in dat waar je als bedrijf voor staat. Wat
-          opnieuw de nodige positieve effecten met zich meebrengt.
+          Notificaties zorgen ervoor dat u opvalt bij u klanten en ze meteen op
+          de hoogte zijn van de laatste aanbiedingen of nieuws.
         </p>
       </div>
 

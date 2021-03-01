@@ -249,7 +249,9 @@ export default function Websites() {
       <div class="container" style={{ marginTop: 100 }}>
         <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
           <h2 class="block__title mb-3">
-            <span class="gradientText">Use cases</span>
+            <span class="gradientText">
+              Voordelen van een professionele website
+            </span>
           </h2>
           <p class="block__paragraph pb-4">
             Waarom is een goede website voor mijn bedrijf zo belangrijk? En hoe

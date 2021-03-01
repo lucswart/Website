@@ -42,7 +42,6 @@ export default function Diensten() {
           href="/favicon-16x16.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <script async src="https://cdn.splitbee.io/sb.js"></script>
       </Head>
       <header className="hero container-fluid">
         <Nav />
@@ -66,12 +65,11 @@ export default function Diensten() {
             <div class="col-lg-6 my-5 my-lg-0 text-center position-relative">
               <motion.div
                 class="iphone-mockup"
-                style={{ width: 500 }}
+                style={{ width: "100%" }}
                 layoutId="image"
               >
                 <img
                   alt="websiteImg"
-                  style={{ width: "100%" }}
                   class="iphone-mockup__img"
                   src={require("../../assets/macScreenshot.png")}
                 />
