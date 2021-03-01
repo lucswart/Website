@@ -136,6 +136,7 @@ export default function Contact() {
           href="/favicon-16x16.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
+        <script async src="https://cdn.splitbee.io/sb.js"></script>
       </Head>
       <header className="hero container-fluid">
         <Nav />
