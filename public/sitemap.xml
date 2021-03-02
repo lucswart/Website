@@ -59,4 +59,9 @@
 		<loc>https://byte24.nl/overons</loc>
 		<lastmod>2021-03-02</lastmod>
 	</url>
+
+	<url>
+		<loc>https://byte24.nl/producten/index</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
 </urlset>

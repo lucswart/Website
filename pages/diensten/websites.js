@@ -59,8 +59,9 @@ export default function Websites() {
             de juiste CMS, betalingsystemen en design voor jouw project.
           </motion.p>
         </div>
+
         <motion.div
-          class="hero__img-container col-11 col-lg-8 mx-auto p-0 mt-5"
+          class="hero__img-container text-center position-relative"
           layoutId="image"
         >
           <img
@@ -68,6 +69,16 @@ export default function Websites() {
             class="iphone-mockup__img"
             src={require("../../assets/macScreenshot.png")}
           />
+          <svg
+            class="block-8-iph-iph-blob-svg"
+            viewBox="0 0 330 340"
+            style={{ color: "#26a9e0" }}
+          >
+            <path
+              d="M36.2776 135.15C56.2778 60.5085 140.989 18.3532 225.485 40.9939C309.981 63.6345 313.366 129.395 293.366 204.037C273.366 278.678 237.553 333.936 153.058 311.295C68.5616 288.655 16.2774 209.792 36.2776 135.15Z"
+              fill="currentColor"
+            ></path>
+          </svg>
         </motion.div>
       </header>
 

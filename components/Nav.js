@@ -177,7 +177,8 @@ const Nav = (props) => {
                             <span class="mx-2"></span>
                             <div class="dropdown__item">
                               <span class="dropdown__item-title">
-                                Voorraad beheer systeem
+                                Voorraad beheer systeem{" "}
+                                <span class="gradientText">(Coming Soon)</span>
                               </span>
                               <p class="dropdown__item-description">
                                 Voorraad beheer voor bollenboeren en

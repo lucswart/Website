@@ -53,14 +53,22 @@ export default function Offerte() {
         <meta name="twitter:card" content="summary_large_image" />
         <script async src="https://cdn.splitbee.io/sb.js"></script>
       </Head>
+
       <header className="hero container-fluid">
         <Nav />
         <div class="hero__body text-center col-lg-8 px-0 mx-auto">
           <h1 layoutId="title2" className="hero__title mb-3">
-            <span class="gradientText">COMING SOON</span>
+            <span class="gradientText">Offerte aanvragen</span>
           </h1>
         </div>
       </header>
+
+      <div
+        className="container text-center"
+        style={{ minHeight: "60vh", marginTop: -20 }}
+      >
+        <h3>Kies jouw soort opdracht</h3>
+      </div>
 
       <Footer />
     </>
