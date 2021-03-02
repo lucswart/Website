@@ -143,7 +143,7 @@ export default function Home() {
           property="og:description"
           content="Byte24 is de bestemming voor al uw benodigdheden op het gebied van app- en webdevelopment."
         />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#092f57" />
         <link rel="icon" type="image/png" href="/favicon.ico" />
         <link
           rel="apple-touch-icon"

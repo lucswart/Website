@@ -4,11 +4,13 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useRouter } from "next/router";
 
 export default function Contact() {
   const [email, setEmail] = useState("");
   const [naam, setNaam] = useState("");
   const [bericht, setBericht] = useState("");
+  const router = useRouter();
 
   function clearFields() {
     setEmail("");
@@ -95,11 +97,6 @@ export default function Contact() {
     })();
   }, []);
 
-  function openChat(e) {
-    e.preventDefault();
-    $crisp.push(["do", "chat:open"]);
-  }
-
   return (
     <>
       <Head>
@@ -116,7 +113,7 @@ export default function Contact() {
           property="og:description"
           content="Byte24 is de bestemming voor al uw benodigdheden op het gebied van app- en webdevelopment. Neem gelijk contact op om je online project tot realisatie te brengen!"
         />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#092f57" />
         <link rel="icon" type="image/png" href="/favicon.ico" />
         <link
           rel="apple-touch-icon"
@@ -193,9 +190,9 @@ export default function Contact() {
                 </div>
                 <button
                   class="btn btn-primary w-100"
-                  onClick={(e) => openChat(e)}
+                  onClick={() => router.push("/offerte")}
                 >
-                  Open live chat
+                  Vraag offerte aan
                 </button>
                 <div class="hr">
                   <span class="hr__or">OF</span>

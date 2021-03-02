@@ -21,7 +21,7 @@ export default function Apps() {
           property="og:description"
           content="Wil jij een app laten maken? Byte24 is de bestemming voor al uw benodigdheden op het gebied van app- en webdevelopment."
         />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#092f57" />
         <link rel="icon" type="image/png" href="/favicon.ico" />
         <link
           rel="apple-touch-icon"
@@ -296,6 +296,51 @@ export default function Apps() {
         <p>
           Notificaties zorgen ervoor dat u opvalt bij u klanten en ze meteen op
           de hoogte zijn van de laatste aanbiedingen of nieuws.
+        </p>
+      </div>
+
+      <div class="container" style={{ marginTop: 100 }}>
+        <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
+          <h2 class="block__title mb-3">
+            <span class="gradientText">Web, native of hybride?</span>
+          </h2>
+          <p class="block__paragraph pb-4">
+            Er zijn veel technieken om een mobiele app te ontwikkelen, maar de
+            drie hoofdgroepen zijn web apps, native apps en hybride apps. Alle
+            drie hebben ze hun voordelen en nadelen. We leggen je uit wat deze
+            zijn.
+          </p>
+        </div>
+        <h3>Web apps</h3>
+        <p>
+          Een web app, ook wel PWA (Progressive Web App) genoemd, is zoals de
+          naam al zegt een app gebaseerd op web technologie. Het is in feite een
+          website en je kan ook van elke website een web app maken. Daarnaast
+          heeft het net zoals een 'echte' app een splashscreen en een icon als
+          je het installeert op je apparaat. Echter zijn er ook een hoop
+          restricties, de app voelt niet zo snel en toegankelijk aan als een
+          native of hybride app en je kan weinig functies van de telefoon zelf
+          oppakken zoals In App Purchases en notificaties.
+        </p>
+        <h3>Native apps</h3>
+        <p>
+          Native apps zijn apps die gemaakt zijn specifiek voor de
+          desbetreffende OS. Android gebruikt C++ en iOS Swift. Het grootste
+          voordeel hiervan is dat je alle beschikbare functionaliteiten van het
+          apparaat hebt. Echter bevatten Hybride apps de meeste
+          functionaliteiten ook en wordt hier vaker voor gekozen, omdat het een
+          codebase is in plaat van twee.
+        </p>
+        <h3>Hybride apps</h3>
+        <p>
+          De meest gekozen techniek om apps te maken tegenwoordig is gebruik
+          maken van een hybride framework zoals React Native. Met een codebase
+          kunnen we voor beide platformen een app maken die vrijwel 'native' is.
+        </p>
+        <h3>Welke techniek moet jij kiezen?</h3>
+        <p>
+          Dit hangt af van de eisen die jij stelt en verschilt dus per project.
+          Neem contact met ons op, zodat wij je hierin kunnen adviseren.
         </p>
       </div>
 
