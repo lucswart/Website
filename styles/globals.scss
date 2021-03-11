@@ -117,6 +117,13 @@ button:focus {
   color: var(--secondary-invert);
 }
 
+.btn-three,
+.btn-three:hover,
+.btn-three:focus {
+  background: var(--gradient-three, --secondary);
+  color: #fff;
+}
+
 .btn-primary--empty,
 .btn-primary--empty:hover,
 .btn-primary--empty:focus {
@@ -1070,7 +1077,6 @@ button:focus {
 }
 
 .hero__content {
-  margin-top: 100px;
   text-align: initial;
 }
 

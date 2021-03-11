@@ -311,7 +311,8 @@ export default function Apps() {
       <div class="container" style={{ marginTop: 100 }}>
         <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
           <h2 class="block__title mb-3">
-            <span class="gradientText">Web, native of hybride?</span>
+            <span class="gradientText">Web, native </span>{" "}
+            <span class="gradientText">of hybride?</span>
           </h2>
           <p class="block__paragraph pb-4">
             Er zijn veel technieken om een mobiele app te ontwikkelen, maar de
