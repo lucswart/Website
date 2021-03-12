@@ -1,4 +1,5 @@
 import "../styles/globals.scss";
+import "../styles/success.scss";
 import { AnimateSharedLayout } from "framer-motion";
 
 function MyApp({ Component, pageProps }) {

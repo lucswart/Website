@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { motion } from "framer-motion";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
